@@ -1,6 +1,6 @@
 # Create Kubernetes
 data "template_file" "kubernetes" {
-  template = "${file("../../templates/kubernetes.json.tpl")}"
+  template = "${file("./templates/kubernetes.json.tpl")}"
 
   vars {
     master_subnet_id                   = "${var.master_subnet_id}"
