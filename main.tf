@@ -92,11 +92,11 @@ resource "null_resource" "run_post_deployment" {
 resource "null_resource" "run_upload_output_files" {
   provisioner "local-exec" {
     command = <<EOT
-      azcopy \
+      az storage blob upload-batch \
       --source ./_output/${var.dns_prefix}/ \
-      --destination https://${var.terraform_account_name}.blob.core.windows.net/${var.terraform_container_name}/ \
-      --dest-key ${var.terraform_account_key} \
-      --recursive
+      --destination ${var.terraform_account_name} \
+      --account-name ${var.terraform_container_name} \
+      --account-key ${var.terraform_account_key} 
     EOT
   }
 
