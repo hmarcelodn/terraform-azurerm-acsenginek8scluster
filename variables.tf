@@ -6,16 +6,17 @@ variable "master_first_consecutive_static_ip" {
 variable "agent_pool_count" {
   type        = "string"
   description = "Agent Pool Count"
+  default     = 1
 }
 
 variable "nodes_subnet_id" {
   type        = "string"
-  description = "Kubernetes Nodes Subnet ID"
+  description = "Kubernetes Nodes Subnet ID (Azure Resource ID)"
 }
 
 variable "master_subnet_id" {
   type        = "string"
-  description = "Kubernetes Masters Subnet ID"
+  description = "Kubernetes Masters Subnet ID (Azure Resource ID)"
 }
 
 variable "subscription_id" {
@@ -60,6 +61,7 @@ variable "cluster_k8s_resource_group" {
 variable "master_count" {
   type        = "string"
   description = "Number of master nodes to be created"
+  default     = 1
 }
 
 variable "master_vm_size" {
@@ -79,12 +81,12 @@ variable "rsa_public_key" {
 
 variable "terraform_account_name" {
   type        = "string"
-  description = "Account Name where the acs-engine deployment output files will be uploaded to."
+  description = "Account Name where the acs-engine deployment output files will be uploaded to. (Must exist before execution)"
 }
 
 variable "terraform_container_name" {
   type        = "string"
-  description = "Account Container Name where the acs-engine deployment output files will be uploaded to."
+  description = "Account Container Name where the acs-engine deployment output files will be uploaded to. (Must exist before execution)"
 }
 
 variable "terraform_account_key" {
