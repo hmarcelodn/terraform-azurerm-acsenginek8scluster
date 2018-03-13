@@ -94,8 +94,8 @@ resource "null_resource" "run_upload_output_files" {
     command = <<EOT
       az storage blob upload-batch \
       --source ./_output/${var.dns_prefix}/ \
-      --destination ${var.terraform_account_name} \
-      --account-name ${var.terraform_container_name} \
+      --destination ${var.terraform_container_name} \
+      --account-name ${var.terraform_account_name} \
       --account-key ${var.terraform_account_key} 
     EOT
   }
