@@ -142,12 +142,6 @@ variable "kubernetes_max_pods" {
   description = "Indicates the max number of pods to deploy by machine."
 }
 
-variable "kubernetes_network_plugin" {
-  type        = "string"
-  default     = "azure"
-  description = "Indicates the networkPlugin azure/kubenet/etc."
-}
-
 variable "kubernetes_attached_disk_sizes" {
   type        = "string"
   default     = "30"

@@ -7,8 +7,7 @@
       "kubernetesConfig": {
         "maxPods": ${kubernetes_max_pods},
         "networkPolicy": "${kubernetes_network_policy}",
-        "enableRbac": ${kubernetes_rbac_enabled},
-        "networkPlugin": "${kubernetes_network_plugin}"              
+        "enableRbac": ${kubernetes_rbac_enabled}            
       }
     },
     "masterProfile": {
