@@ -147,3 +147,9 @@ variable "kubernetes_attached_disk_sizes" {
   default     = "30"
   description = "Comma Separated Attached Disks"
 }
+
+variable "kubernetes_storage_profile" {
+  type        = "string"
+  default     = "30"
+  description = "Comma Separated Attached Disks"
+}

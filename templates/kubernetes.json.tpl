@@ -24,6 +24,7 @@
         "vmSize": "${node_vm_size}",
         "availabilityProfile": "AvailabilitySet",
         "vnetSubnetId": "${nodes_subnet_id}",
+        "storageProfile": "${kubernetes_storage_profile}",
         "diskSizesGB": [${kubernetes_attached_disk_sizes}]            
       }
     ],

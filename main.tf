@@ -19,6 +19,7 @@ data "template_file" "kubernetes" {
     kubernetes_rbac_enabled            = "${var.kubernetes_rbac_enabled}"
     kubernetes_max_pods                = "${var.kubernetes_max_pods}"
     kubernetes_attached_disk_sizes     = "${var.kubernetes_attached_disk_sizes}"
+    kubernetes_storage_profile         = "${var.kubernetes_storage_profile}"
   }
 }
 
