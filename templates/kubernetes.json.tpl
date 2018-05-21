@@ -24,7 +24,8 @@
         "count": ${agent_pool_count},
         "vmSize": "${node_vm_size}",
         "availabilityProfile": "AvailabilitySet",
-        "vnetSubnetId": "${nodes_subnet_id}"             
+        "vnetSubnetId": "${nodes_subnet_id}",
+        "diskSizesGB": ${disk_sizes}            
       }
     ],
     "linuxProfile": {

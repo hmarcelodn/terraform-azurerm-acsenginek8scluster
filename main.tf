@@ -19,6 +19,7 @@ data "template_file" "kubernetes" {
     kubernetes_rbac_enabled            = "${var.kubernetes_rbac_enabled}"
     kubernetes_max_pods                = "${var.kubernetes_max_pods}"
     kubernetes_network_plugin          = "${var.kubernetes_network_plugin}"
+    disk_sizes                         = "${jsonencode(split(",", var.disk_sizes))}"
   }
 }
 

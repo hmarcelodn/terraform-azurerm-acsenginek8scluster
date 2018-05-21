@@ -147,3 +147,9 @@ variable "kubernetes_network_plugin" {
   default     = "azure"
   description = "Indicates the networkPlugin azure/kubenet/etc."
 }
+
+variable "kubernetes_attached_disk_sizes" {
+  type        = "string"
+  default     = "30"
+  description = "Comma Separated Attached Disks"
+}
