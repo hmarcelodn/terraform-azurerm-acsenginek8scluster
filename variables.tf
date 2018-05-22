@@ -153,3 +153,15 @@ variable "kubernetes_storage_profile" {
   default     = "30"
   description = "Comma Separated Attached Disks"
 }
+
+variable "node_os_disk_gb" {
+  type        = "string"
+  default     = "250"
+  description = "OS Disk GiB Size for nodes"
+}
+
+variable "master_os_disk_gb" {
+  type        = "string"
+  default     = "250"
+  description = "OS Disk GiB Size for master"
+}

@@ -20,6 +20,8 @@ data "template_file" "kubernetes" {
     kubernetes_max_pods                = "${var.kubernetes_max_pods}"
     kubernetes_attached_disk_sizes     = "${var.kubernetes_attached_disk_sizes}"
     kubernetes_storage_profile         = "${var.kubernetes_storage_profile}"
+    node_os_disk_gb                    = "${var.node_os_disk_gb}"
+    master_os_disk_gb                  = "${var.master_os_disk_gb}"
   }
 }
 
