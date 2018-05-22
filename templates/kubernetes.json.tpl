@@ -14,7 +14,7 @@
       "count": ${master_count},
       "dnsPrefix": "${dns_prefix}",
       "vmSize": "${master_vm_size}",
-      "OSDiskSizeGB": "${master_os_disk_gb}",
+      "OSDiskSizeGB": ${master_os_disk_gb},
       "vnetSubnetId": "${master_subnet_id}",
       "firstConsecutiveStaticIP": "${master_first_consecutive_static_ip}"     
     },
@@ -23,7 +23,7 @@
         "name": "agentpool1",
         "count": ${agent_pool_count},
         "vmSize": "${node_vm_size}",
-        "OSDiskSizeGB": "${node_os_disk_gb}",
+        "OSDiskSizeGB": ${node_os_disk_gb},
         "availabilityProfile": "AvailabilitySet",
         "vnetSubnetId": "${nodes_subnet_id}",
         "storageProfile": "${kubernetes_storage_profile}",
